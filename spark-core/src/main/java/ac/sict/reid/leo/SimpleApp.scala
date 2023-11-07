@@ -4,7 +4,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object SimpleApp {
   def main(args: Array[String]): Unit = {
-    val logFile = "file:///Users/leostudio/Documents/Code/Data/README.md"
+    val logFile = "file:///Users/leostudio/Documents/Code/Data/RDD城市关注度实验记录.md"
     val conf = new SparkConf().setMaster("local[*]").setAppName("SimpleApp")
     val sc = new SparkContext(conf)
     val value = sc.textFile(logFile, 2).cache()

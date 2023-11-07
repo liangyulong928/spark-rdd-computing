@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>spark-core</module>
+        <module>Spark-Streaming</module>
+        <module>spark-alibaba</module>
     </modules>
 
     <properties>
